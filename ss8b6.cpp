@@ -6,10 +6,14 @@ int main(){
 	for(int i =0;i < 3; i++){
 		for(int j =0; j <3;j++){
 			if(i == j){
+				printf("%d", arr[i][j]); 
 				sum += arr[i][j]; 
-			} 
+			}else{
+				printf("\t"); 
+			}
 		}
+		printf("\n"); 
 	} 
-	printf("tong cac phan tu tren duong cheo chinh cua mang la: %d", sum); 
+	printf("\ntong cac phan tu tren duong cheo chinh cua mang la: %d", sum); 
 	return 0; 
 } 
